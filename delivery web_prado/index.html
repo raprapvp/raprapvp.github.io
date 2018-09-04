@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<header>
+		<div id="hWrapper"></div>
+			<a href="site1.html" id="logo"></a>
+
+			<nav>
+				<a href="#" id="menuIcon"></a>
+				<ul class="navBlock">
+					<li><a href="#" class="current">HOME</a></li>
+					<li><a href="#">NEW PRODUCTS</a></li>
+					<li><a href="#">SPECIALS</a></li>
+					<li><a href="#">ALL PRODUCTS</a></li>
+					<li><a href="#">FAQS</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><input type="text" placeholder="Search..."></li>
+				</ul>
+			</nav>
+
+	</header>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!--<div id="bannerOuter">
+		<center><img src="foodStore1.png" class"logoImg"></center>
+	</div>-->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="logoWrapper">
+	<center><img src="foodStore.png"></center>
+</div>
+
+<div class="outerWrapper">
+	<img src="insideLogo.png" class="innerLogo">
+
+	<div class="outerWrapper1">
+		<h1>Categories</h1><br><br><br>
+		<p>Fruits/Vegetables <br><br><br>
+			Meat <br><br><br>
+			Seafood<br><br><br>
+			Entrees<br><br><br>
+			Pizza/Pasta<br><br><br>
+			Side Dishes<br><br><br>
+			Appetizers<br><br><br>
+			Snacks<br><br><br>
+			Ice Cream<br><br><br>
+			Desserts<br><br><br>
+			Beverages<br></p><br><br><br><br>
+
+	</div>
+
+	<div class="rightWrapper1">
+		<h1>Popular Products</h1>
+		<div class="rWrapperContent">
+			<div class="grid1">
+				<p>Product1 <span><input type="checkbox" name="products[]" value="Product1" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+			
+			<div class="grid2">
+				<p>Product2 <span><input type="checkbox" name="products[]" value="Product2" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+
+			<div class="grid3">
+				<p>Product3 <span><input type="checkbox" name="products[]" value="Product3" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+
+			<div class="grid4">
+				<p>Product4 <span><input type="checkbox" name="products[]" value="Product4" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+
+			<div class="grid5">
+				<p>Product5 <span><input type="checkbox" name="products[]" value="Product5" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+
+			<div class="grid6">
+				<p>Product6 <span><input type="checkbox" name="products[]" value="Product6" onclick="getValue()" class="checks">$12.99</span></p> <br>
+			<!--	<form>
+					<input type="submit" value="Add to Cart">
+				</form> -->
+			</div>
+
+			<a href="#" onclick="getValue();return false;">Get Total</a>
+			<!--<input type="submit" value="BUY" href="#" onclick="getValue();return false;"> -->
+
+			<!--<script type="text/javascript">
+				function getValue(){
+					var products = document.getElementsByClassName('products');
+					var str='';
+
+					for (var i = 0; i < 6; i++) {
+						if (products[i].checked === true) {
+							str += products[i].value + " ";
+							text.style.display = "block";
+						}
+						else{
+							text.style.display="none";
+						}
+					}
+				}
+			</script> -->
+
+
+		</div>
+		<script type="text/javascript">
+				function getValue(){
+					var checks = document.getElementsByClassName('checks');
+					var str='';
+
+					for(i=0;i<6;i++){
+						if (checks[i].checked == true) {
+							str+= checks[i].value+" ";
+							alert(checks[i].value);
+						}
+						
+					}
+				}
+			</script>
+	</div>
+</div>
+
+<footer>
+	<h4>©PRADO 2018, ALL RIGHTS RESERVED!</h4>
+</footer>
+
+
+
+</body>
+</html>
